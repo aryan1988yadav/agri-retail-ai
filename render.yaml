@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: agriretail-api
+    runtime: python
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: cd backend && uvicorn main:app --host 0.0.0.0 --port 
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: DATABASE_URL
+        value: sqlite:///./agri_retail.db
+    healthCheckPath: /

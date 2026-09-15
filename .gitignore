@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*.class
+backend/__pycache__/
+ml/__pycache__/
+.pytest_cache/
+
+# Environment Variables
+.env
+backend/.env
+frontend/.env.local
+
+# Build Outputs
+dist/
+frontend/dist/
+.vite/
+frontend/.vite/
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+npm-debug.log*
+
+# Database temporary locks
+*.db-journal
+*.db-wal
+*.db-shm
+
+# IDE
+.vscode/
+.idea/
